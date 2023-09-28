@@ -17,4 +17,5 @@ jobs:
       - name: call script
         shell: bash
         run: |
+          git update-index --chmod=+x ./.github/scripts/script.sh
           ./.github/scripts/script.sh
