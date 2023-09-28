@@ -25,6 +25,7 @@ jobs:
           path: ./test-dir/
             
   test-j0:
+    needs: test-job
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,3 +38,8 @@ jobs:
         run: |
           cd test-dir
           cat file.txt
+        
+      - name: python step
+        shell: python
+        run: |
+          print("hello from python")
