@@ -1,0 +1,14 @@
+name: Sample Action
+on:
+  push:
+    branch:
+      - main
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: print hello world
+        shell: bash
+        run: echo "hello world"
