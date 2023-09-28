@@ -14,3 +14,8 @@ jobs:
         run: echo "hello $name"
         env:
           name: "John"
+      - name: call script
+        shell: bash
+        run: |
+          echo "executing ls command"
+          ls
