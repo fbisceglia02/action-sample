@@ -13,3 +13,10 @@ for element in "${my_array[@]}";
 do
     echo "element is $element"
 done    
+
+mkdir ../test-dir
+echo "ls"
+ls
+echo "cd.. & ls"
+cd ..
+ls
