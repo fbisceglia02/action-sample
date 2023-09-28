@@ -9,7 +9,7 @@ my_array+=2
 my_array+=3
 my_array+=4
 
-for element in "{$my_array[@]}";
+for element in "${my_array[@]}";
 do
     echo "element is $element"
 done    

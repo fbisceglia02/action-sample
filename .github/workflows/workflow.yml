@@ -17,5 +17,4 @@ jobs:
       - name: call script
         shell: bash
         run: |
-          echo "executing ls command"
-          ls
+          ./.github/scripts/script.sh
