@@ -14,9 +14,6 @@ do
     echo "element is $element"
 done    
 
-mkdir ../test-dir
-echo "ls"
-ls
-echo "cd.. & ls"
-cd ..
-ls
+mkdir test-dir
+cd test-dir
+echo "awesome content!" >> file.txt

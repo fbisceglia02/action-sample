@@ -19,3 +19,16 @@ jobs:
         run: |
           git update-index --chmod=+x ./.github/scripts/script.sh
           ./.github/scripts/script.sh
+      - uses: actions/upload-artifact@v3
+          with:
+            name: file.txt
+            path: ./test-dir/
+            
+  test-j0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@
+          with:
+            name: file.txt
+            path: ./test-dir/
